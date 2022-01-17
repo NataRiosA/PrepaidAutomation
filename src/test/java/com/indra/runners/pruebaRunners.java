@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/ejecutar.feature"
         ,glue = "com.indra.steps_definitions"
         ,snippets = SnippetType.CAMELCASE
-        //,tags = "@caso"
+        ,tags = "@Scenario2"
 )
 public class pruebaRunners {
 }

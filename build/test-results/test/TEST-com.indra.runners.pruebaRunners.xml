@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.indra.runners.pruebaRunners" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="22LAP5CG0525FBR" time="0.0">
+  <properties/>
+  <system-out><![CDATA[10:19:14.680 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\PrepaidAutomation\serenity.properties 
+10:19:14.839 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\PrepaidAutomation\serenity.properties 
+10:19:14.847 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\PrepaidAutomation\serenity.properties 
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.driver=chrome
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - chrome.capabilities.incognito=true
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.chrome.driver=src/test/resources/drivers/chromedriver.exe
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - chrome.capabilities.acceptSslCerts=true
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.console.colors=true
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.base.url=https://advantageonlineshopping.com/#/
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.project.name=servicios Rest_Assured
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.wait.for.timeout=6000
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.use.unique.browser=true
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.timeouts.implicitlywait=20000
+10:19:14.863 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.browser.maximized=true
+10:19:15.424 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\PrepaidAutomation\serenity.properties 
+10:19:15.529 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\PrepaidAutomation\serenity.properties 
+10:19:15.537 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\PrepaidAutomation\serenity.properties 
+10:19:15.537 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.driver=chrome
+10:19:15.537 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - chrome.capabilities.incognito=true
+10:19:15.539 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.chrome.driver=src/test/resources/drivers/chromedriver.exe
+10:19:15.539 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - chrome.capabilities.acceptSslCerts=true
+10:19:15.539 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.console.colors=true
+10:19:15.539 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.base.url=https://advantageonlineshopping.com/#/
+10:19:15.539 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.project.name=servicios Rest_Assured
+10:19:15.539 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.wait.for.timeout=6000
+10:19:15.539 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.use.unique.browser=true
+10:19:15.539 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.timeouts.implicitlywait=20000
+10:19:15.539 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.browser.maximized=true
+10:19:15.549 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[96m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+?[0m
+10:19:15.560 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@4f4808e0
+10:19:15.571 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Prueba
+10:19:15.740 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Ingresar a la base de datos activador
+-------------------------------------------------------------------(prueba;ingresar-a-la-base-de-datos-activador)
+10:19:15.845 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+10:19:15.845 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+10:19:19.841 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+10:19:19.960 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+10:19:19.977 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@4f78a3e3
+10:19:19.977 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome prueba:Ingresar a la base de datos activador
+10:19:19.977 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@4f78a3e3: Generating report for test outcome: prueba:Ingresar a la base de datos activador
+10:19:19.994 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Ingresar a la base de datos activador to file C:\PrepaidAutomation\target\site\serenity\68409bb587f57d352c56175b6ceae0be649c36691466db4ecbacbb0ba6e50d42.json (using temp file C:\PrepaidAutomation\target\site\serenity\68409bb587f57d352c56175b6ceae0be649c36691466db4ecbacbb0ba6e50d42.json5764d221-9e6f-4b34-90a1-1afa9a4f7031)
+10:19:20.068 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome prueba:Ingresar a la base de datos activador done
+10:19:20.068 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+10:19:20.068 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 91 ms
+10:19:20.068 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@26ff1e8e
+10:19:20.076 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome prueba:Ingresar a la base de datos activador
+10:19:20.076 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@26ff1e8e: Generating report for test outcome: prueba:Ingresar a la base de datos activador
+10:19:20.076 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR Ingresar a la base de datos activador in 68409bb587f57d352c56175b6ceae0be649c36691466db4ecbacbb0ba6e50d42
+10:19:20.107 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+10:19:20.107 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+10:19:20.107 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[Requirement{name='prueba', type='feature' parent = 'null', cardNumber='null'}]
+10:19:20.115 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome Ingresar a la base de datos activador-[]: Optional[Requirement{name='prueba', type='feature' parent = 'null', cardNumber='null'}]
+10:19:20.124 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome Ingresar a la base de datos activador-[]: Optional[Requirement{name='prueba', type='feature' parent = 'null', cardNumber='null'}]
+10:19:20.335 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR prueba:Ingresar a la base de datos activador in 68409bb587f57d352c56175b6ceae0be649c36691466db4ecbacbb0ba6e50d42.html in directory C:\PrepaidAutomation\target\site\serenity  
+10:19:20.343 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in 68409bb587f57d352c56175b6ceae0be649c36691466db4ecbacbb0ba6e50d42.html
+10:19:20.973 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report 68409bb587f57d352c56175b6ceae0be649c36691466db4ecbacbb0ba6e50d42.html in 630 ms
+10:19:20.973 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome prueba:Ingresar a la base de datos activador done
+10:19:20.973 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+10:19:20.973 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 905 ms
+
+1 Scenarios (?[32m1 passed?[0m)
+2 Steps (?[32m2 passed?[0m)
+0m4,632s
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
