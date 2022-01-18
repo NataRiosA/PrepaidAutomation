@@ -11,4 +11,3 @@ Feature: prueba
   @Scenario2
   Scenario: Ingresar a la base de datos activador
     Given conexion a base de datos
-    When ejecutar procedimiento almacenado

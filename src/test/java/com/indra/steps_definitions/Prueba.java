@@ -18,6 +18,7 @@ public class Prueba {
 
     @Given("^estoy probando$")
     public void estoyProbando() {
+        uninstallCBSServices.open();
         uninstallCBSServices.performLineCleaning();
 
     }
@@ -36,11 +37,6 @@ public class Prueba {
     @Given("^conexion a base de datos$")
     public void conexionABaseDeDatos() throws SQLException {
         databaseConnection.connection();
-    }
-
-    @When("^ejecutar procedimiento almacenado$")
-    public void ejecutarProcedimientoAlmacenado() throws SQLException {
-
     }
 
 }
