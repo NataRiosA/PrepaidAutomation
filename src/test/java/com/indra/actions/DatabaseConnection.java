@@ -9,11 +9,6 @@ public class DatabaseConnection extends DataExcel {
 
     private static final String MSISDN = "3016877411";
 
-    public void ejecutarTodo(String MSISDN, String MSI){
-        databaseConnectionA(getUrlDBA(),getService()
-                ,getUser(),getPassword(), "AL_RE_ACTIVADOR");
-
-    }
 
 //---------conexion a base de datos-------------------------
     public void connection() throws SQLException {
