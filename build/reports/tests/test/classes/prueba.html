@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.364s</div>
+<div class="counter">3.307s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">Ingresar a la base de datos activador</td>
-<td class="success">1.714s</td>
+<td class="success">0.704s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">probando</td>
-<td class="success">0.650s</td>
+<td class="success">2.603s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,8 +92,275 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>[8957732111198172294, 732111198172293, 8957732111198172294, 732111198172293]
-16:13:07.503 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+<pre>3016877411
+14:55:51.386 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://10.65.45.12:9001
+14:55:51.392 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.65.45.12:9001
+14:55:51.445 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+14:55:51.446 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+14:55:51.446 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+14:55:51.447 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+14:55:51.447 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+14:55:51.447 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /gatewaycbs/BcServicesInt HTTP/1.1
+14:55:51.447 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /gatewaycbs/BcServicesInt HTTP/1.1[\r][\n]&quot;
+14:55:51.448 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:55:51.448 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+14:55:51.448 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 748[\r][\n]&quot;
+14:55:51.448 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: 10.65.45.12:9001[\r][\n]&quot;
+14:55:51.448 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:55:51.448 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_301)[\r][\n]&quot;
+14:55:51.449 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:55:51.449 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+14:55:51.449 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /gatewaycbs/BcServicesInt HTTP/1.1
+14:55:51.449 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+14:55:51.449 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: text/xml;charset=UTF-8
+14:55:51.449 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 748
+14:55:51.449 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: 10.65.45.12:9001
+14:55:51.449 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+14:55:51.449 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_301)
+14:55:51.449 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:bcc=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:bcs=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ws=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;ws:queryCustomerInfo&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;QueryCustomerInfoRequest&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;bcs:QueryObj&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;bcs:SubAccessCode&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;bcc:PrimaryIdentity&gt;3016877411&lt;/bcc:PrimaryIdentity&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;/bcs:SubAccessCode&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;/bcs:QueryObj&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;/QueryCustomerInfoRequest&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;/ws:queryCustomerInfo&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\n]&quot;
+14:55:51.450 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+14:55:51.525 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:55:51.526 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 20 Jan 2022 19:55:51 GMT[\r][\n]&quot;
+14:55:51.526 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+14:55:51.526 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/xml; charset=utf-8[\r][\n]&quot;
+14:55:51.526 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.527 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+14:55:51.527 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+14:55:51.527 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 20 Jan 2022 19:55:51 GMT
+14:55:51.527 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+14:55:51.527 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/xml; charset=utf-8
+14:55:51.531 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+14:55:51.541 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+14:55:51.541 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:55:51.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;006e[\r][\n]&quot;
+14:55:51.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Body&gt;&quot;
+14:55:51.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;01f8[\r][\n]&quot;
+14:55:51.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;ns4:queryCustomerInfoResponse xmlns:ns2=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:ns3=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ns4=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:ns5=&quot;http://www.huawei.com/bme/cbsinterface/cbscommon&quot;&gt;&lt;return&gt;&lt;ResultHeader&gt;&lt;ns5:Version&gt;1&lt;/ns5:Version&gt;&lt;ns5:ResultCode&gt;118030260&lt;/ns5:ResultCode&gt;&lt;ns5:ResultDesc&gt;Subscriber 3016877411 does not exist.&lt;/ns5:ResultDesc&gt;&lt;/ResultHeader&gt;&lt;/return&gt;&lt;/ns4:queryCustomerInfoResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;&quot;
+14:55:51.586 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.587 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0000[\r][\n]&quot;
+14:55:51.587 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.587 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@d4a2145
+14:55:51.587 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+La linea 3016877411 no esta activa
+2147483647
+14:55:51.629 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://10.65.45.12:9001
+14:55:51.630 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.65.45.12:9001
+14:55:51.668 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+14:55:51.669 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+14:55:51.669 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+14:55:51.669 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+14:55:51.669 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+14:55:51.669 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /gatewaycbs/BcServicesInt HTTP/1.1
+14:55:51.669 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /gatewaycbs/BcServicesInt HTTP/1.1[\r][\n]&quot;
+14:55:51.669 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:55:51.669 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+14:55:51.669 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 748[\r][\n]&quot;
+14:55:51.669 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: 10.65.45.12:9001[\r][\n]&quot;
+14:55:51.669 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:55:51.669 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_301)[\r][\n]&quot;
+14:55:51.669 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:55:51.669 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+14:55:51.669 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /gatewaycbs/BcServicesInt HTTP/1.1
+14:55:51.669 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+14:55:51.669 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: text/xml;charset=UTF-8
+14:55:51.669 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 748
+14:55:51.669 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: 10.65.45.12:9001
+14:55:51.669 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+14:55:51.669 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_301)
+14:55:51.669 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+14:55:51.670 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:bcc=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:bcs=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ws=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;[\n]&quot;
+14:55:51.670 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\n]&quot;
+14:55:51.670 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;ws:queryCustomerInfo&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;QueryCustomerInfoRequest&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;bcs:QueryObj&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;bcs:SubAccessCode&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;bcc:PrimaryIdentity&gt;2147483647&lt;/bcc:PrimaryIdentity&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;/bcs:SubAccessCode&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;/bcs:QueryObj&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;/QueryCustomerInfoRequest&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;/ws:queryCustomerInfo&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\n]&quot;
+14:55:51.671 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+14:55:51.743 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:55:51.743 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 20 Jan 2022 19:55:51 GMT[\r][\n]&quot;
+14:55:51.743 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+14:55:51.743 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/xml; charset=utf-8[\r][\n]&quot;
+14:55:51.743 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.743 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+14:55:51.743 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+14:55:51.743 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 20 Jan 2022 19:55:51 GMT
+14:55:51.743 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+14:55:51.743 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/xml; charset=utf-8
+14:55:51.743 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+14:55:51.743 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+14:55:51.743 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:55:51.744 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;006e[\r][\n]&quot;
+14:55:51.745 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Body&gt;&quot;
+14:55:51.745 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.745 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;01f8[\r][\n]&quot;
+14:55:51.745 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;ns4:queryCustomerInfoResponse xmlns:ns2=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:ns3=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ns4=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:ns5=&quot;http://www.huawei.com/bme/cbsinterface/cbscommon&quot;&gt;&lt;return&gt;&lt;ResultHeader&gt;&lt;ns5:Version&gt;1&lt;/ns5:Version&gt;&lt;ns5:ResultCode&gt;118030260&lt;/ns5:ResultCode&gt;&lt;ns5:ResultDesc&gt;Subscriber 2147483647 does not exist.&lt;/ns5:ResultDesc&gt;&lt;/ResultHeader&gt;&lt;/return&gt;&lt;/ns4:queryCustomerInfoResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;&quot;
+14:55:51.745 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.745 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0000[\r][\n]&quot;
+14:55:51.745 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.745 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7a6df30b
+14:55:51.745 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+La linea 2147483647 no esta activa
+3016877412
+14:55:51.779 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://10.65.45.12:9001
+14:55:51.779 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.65.45.12:9001
+14:55:51.824 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+14:55:51.824 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+14:55:51.824 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+14:55:51.824 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+14:55:51.824 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+14:55:51.824 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /gatewaycbs/BcServicesInt HTTP/1.1
+14:55:51.824 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /gatewaycbs/BcServicesInt HTTP/1.1[\r][\n]&quot;
+14:55:51.824 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:55:51.824 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+14:55:51.824 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 748[\r][\n]&quot;
+14:55:51.825 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: 10.65.45.12:9001[\r][\n]&quot;
+14:55:51.825 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:55:51.825 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_301)[\r][\n]&quot;
+14:55:51.825 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:55:51.825 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+14:55:51.825 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /gatewaycbs/BcServicesInt HTTP/1.1
+14:55:51.825 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+14:55:51.825 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: text/xml;charset=UTF-8
+14:55:51.825 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 748
+14:55:51.825 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: 10.65.45.12:9001
+14:55:51.825 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+14:55:51.825 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_301)
+14:55:51.825 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+14:55:51.826 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:bcc=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:bcs=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ws=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;[\n]&quot;
+14:55:51.826 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;ws:queryCustomerInfo&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;QueryCustomerInfoRequest&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;bcs:QueryObj&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;bcs:SubAccessCode&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;bcc:PrimaryIdentity&gt;3016877412&lt;/bcc:PrimaryIdentity&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;/bcs:SubAccessCode&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;/bcs:QueryObj&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;/QueryCustomerInfoRequest&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;/ws:queryCustomerInfo&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\n]&quot;
+14:55:51.827 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+14:55:51.911 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:55:51.911 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 20 Jan 2022 19:55:52 GMT[\r][\n]&quot;
+14:55:51.911 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+14:55:51.911 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/xml; charset=utf-8[\r][\n]&quot;
+14:55:51.911 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.911 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+14:55:51.911 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+14:55:51.911 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 20 Jan 2022 19:55:52 GMT
+14:55:51.911 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+14:55:51.911 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/xml; charset=utf-8
+14:55:51.911 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+14:55:51.912 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+14:55:51.912 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:55:51.913 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;006e[\r][\n]&quot;
+14:55:51.913 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Body&gt;&quot;
+14:55:51.913 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.913 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;01f8[\r][\n]&quot;
+14:55:51.913 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;ns4:queryCustomerInfoResponse xmlns:ns2=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:ns3=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ns4=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:ns5=&quot;http://www.huawei.com/bme/cbsinterface/cbscommon&quot;&gt;&lt;return&gt;&lt;ResultHeader&gt;&lt;ns5:Version&gt;1&lt;/ns5:Version&gt;&lt;ns5:ResultCode&gt;118030260&lt;/ns5:ResultCode&gt;&lt;ns5:ResultDesc&gt;Subscriber 3016877412 does not exist.&lt;/ns5:ResultDesc&gt;&lt;/ResultHeader&gt;&lt;/return&gt;&lt;/ns4:queryCustomerInfoResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;&quot;
+14:55:51.913 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.913 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0000[\r][\n]&quot;
+14:55:51.913 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:51.913 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@781d99ba
+14:55:51.913 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+La linea 3016877412 no esta activa
+3016876877
+14:55:51.948 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}-&gt;http://10.65.45.12:9001
+14:55:51.948 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 10.65.45.12:9001
+14:55:51.997 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+14:55:51.997 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+14:55:51.997 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+14:55:51.997 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+14:55:51.997 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+14:55:51.997 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /gatewaycbs/BcServicesInt HTTP/1.1
+14:55:51.997 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;POST /gatewaycbs/BcServicesInt HTTP/1.1[\r][\n]&quot;
+14:55:51.997 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+14:55:51.998 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+14:55:51.998 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Content-Length: 748[\r][\n]&quot;
+14:55:51.998 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Host: 10.65.45.12:9001[\r][\n]&quot;
+14:55:51.998 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+14:55:51.998 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_301)[\r][\n]&quot;
+14:55:51.998 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+14:55:51.998 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;[\r][\n]&quot;
+14:55:51.998 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; POST /gatewaycbs/BcServicesInt HTTP/1.1
+14:55:51.998 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept: */*
+14:55:51.998 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Type: text/xml;charset=UTF-8
+14:55:51.998 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Content-Length: 748
+14:55:51.998 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Host: 10.65.45.12:9001
+14:55:51.998 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Connection: Keep-Alive
+14:55:51.998 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; User-Agent: Apache-HttpClient/4.5.9 (Java/1.8.0_301)
+14:55:51.998 [Test worker] DEBUG org.apache.http.headers - &gt;&gt; Accept-Encoding: gzip,deflate
+14:55:51.998 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:bcc=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:bcs=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ws=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;ws:queryCustomerInfo&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;QueryCustomerInfoRequest&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;bcs:QueryObj&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;bcs:SubAccessCode&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;!--Optional:--&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;                  &lt;bcc:PrimaryIdentity&gt;3016876877&lt;/bcc:PrimaryIdentity&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;               &lt;/bcs:SubAccessCode&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;            &lt;/bcs:QueryObj&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;         &lt;/QueryCustomerInfoRequest&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;      &lt;/ws:queryCustomerInfo&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\n]&quot;
+14:55:51.999 [Test worker] DEBUG org.apache.http.wire -  &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+14:55:52.079 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+14:55:52.079 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Date: Thu, 20 Jan 2022 19:55:52 GMT[\r][\n]&quot;
+14:55:52.079 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+14:55:52.079 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;Content-Type: text/xml; charset=utf-8[\r][\n]&quot;
+14:55:52.079 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:52.079 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+14:55:52.079 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; HTTP/1.1 200 OK
+14:55:52.079 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Date: Thu, 20 Jan 2022 19:55:52 GMT
+14:55:52.079 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Transfer-Encoding: chunked
+14:55:52.079 [Test worker] DEBUG org.apache.http.headers - &lt;&lt; Content-Type: text/xml; charset=utf-8
+14:55:52.080 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+14:55:52.080 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/xml; charset=utf-8
+14:55:52.080 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:55:52.081 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;006e[\r][\n]&quot;
+14:55:52.081 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;S:Envelope xmlns:S=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;S:Body&gt;&quot;
+14:55:52.081 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:52.081 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;01f8[\r][\n]&quot;
+14:55:52.081 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;&lt;ns4:queryCustomerInfoResponse xmlns:ns2=&quot;http://www.huawei.com/bme/cbsinterface/bccommon&quot; xmlns:ns3=&quot;http://www.huawei.com/bme/cbsinterface/bcservices&quot; xmlns:ns4=&quot;http://ws.web.gatewaycbs.tigo.com.co/&quot; xmlns:ns5=&quot;http://www.huawei.com/bme/cbsinterface/cbscommon&quot;&gt;&lt;return&gt;&lt;ResultHeader&gt;&lt;ns5:Version&gt;1&lt;/ns5:Version&gt;&lt;ns5:ResultCode&gt;118030260&lt;/ns5:ResultCode&gt;&lt;ns5:ResultDesc&gt;Subscriber 3016876877 does not exist.&lt;/ns5:ResultDesc&gt;&lt;/ResultHeader&gt;&lt;/return&gt;&lt;/ns4:queryCustomerInfoResponse&gt;&lt;/S:Body&gt;&lt;/S:Envelope&gt;&quot;
+14:55:52.081 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:52.081 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;0000[\r][\n]&quot;
+14:55:52.081 [Test worker] DEBUG org.apache.http.wire -  &lt;&lt; &quot;[\r][\n]&quot;
+14:55:52.081 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@41a035cf
+14:55:52.081 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+La linea 3016876877 no esta activa
+14:55:52.089 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -103,7 +370,7 @@
 
 TEST PASSED: Probando
 ----------------------------------------------------------------------------?[0m
-16:13:09.222 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+14:55:52.799 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -124,7 +391,7 @@ TEST PASSED: Ingresar a la base de datos activador
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 19/01/2022 04:13:09 PM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 20/01/2022 02:55:53 PM</p>
 </div>
 </div>
 </body>

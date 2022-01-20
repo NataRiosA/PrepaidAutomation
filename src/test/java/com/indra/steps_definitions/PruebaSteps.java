@@ -32,7 +32,8 @@ public class PruebaSteps {
 
     @Given("^estoy probando$")
     public void estoyProbando() {
-        enlistment.Enlistment(1);
+        enlistment.ejecutarTodo();
+        //enlistment.Enlistment(1);
         //uninstallCBSServices.performLineCleaning(dataExcel.getUrlGatewayCBS(), dataExcel.getUrlGatewayMG(), dataExcel.getMSISDN());
 
     }
