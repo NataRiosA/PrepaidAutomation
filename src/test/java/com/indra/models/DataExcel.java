@@ -12,9 +12,22 @@ public class DataExcel {
     String Plu;
     String Serial;
     String urlDBA;
-    String service;
-    String user;
-    String password;
+    String serviceA;
+    String userA;
+    String passwordA;
+    String urlDBE;
+    String serviceE;
+    String userE;
+    String passwordE;
+    String urlDBS;
+    String serviceS;
+    String userS;
+    String passwordS;
+    String urlDBP;
+    String serviceP;
+    String userP;
+    String passwordP;
+    String port;
 
     ReadFileXLSX fileXLSX = new ReadFileXLSX();
 
@@ -38,7 +51,7 @@ public class DataExcel {
 
     public String getUrlGatewayMG() {
         fileXLSX.readFileExcel();
-        urlGatewayMG = fileXLSX.excelArray.get(1).get(4);
+        urlGatewayMG = fileXLSX.excelArray.get(1).get(3);
         return urlGatewayMG;
     }
 
@@ -66,22 +79,98 @@ public class DataExcel {
         return urlDBA;
     }
 
-    public String getService() {
+    public String getServiceA() {
         fileXLSX.readFileExcel();
-        service = fileXLSX.excelArray.get(3).get(1);
-        return service;
+        serviceA = fileXLSX.excelArray.get(3).get(1);
+        return serviceA;
     }
 
-    public String getUser() {
+    public String getUserA() {
         fileXLSX.readFileExcel();
-        user = fileXLSX.excelArray.get(3).get(2);
-        return user;
+        userA = fileXLSX.excelArray.get(3).get(2);
+        return userA;
     }
 
-    public String getPassword() {
+    public String getPasswordA() {
         fileXLSX.readFileExcel();
-        password = fileXLSX.excelArray.get(3).get(3);
-        return password;
+        passwordA = fileXLSX.excelArray.get(3).get(3);
+        return passwordA;
     }
 
+    public String getUrlDBE() {
+        fileXLSX.readFileExcel();
+        urlDBE = fileXLSX.excelArray.get(4).get(0);
+        return urlDBE;
+    }
+
+    public String getServiceE() {
+        fileXLSX.readFileExcel();
+        serviceE = fileXLSX.excelArray.get(4).get(1);
+        return serviceE;
+    }
+
+    public String getUserE() {
+        fileXLSX.readFileExcel();
+        userE = fileXLSX.excelArray.get(4).get(2);
+        return userE;
+    }
+
+    public String getPasswordE() {
+        fileXLSX.readFileExcel();
+        passwordE = fileXLSX.excelArray.get(4).get(3);
+        return passwordE;
+    }
+
+    public String getUrlDBS() {
+        fileXLSX.readFileExcel();
+        urlDBS = fileXLSX.excelArray.get(6).get(0);
+        return urlDBS;
+    }
+
+    public String getServiceS() {
+        fileXLSX.readFileExcel();
+        serviceS = fileXLSX.excelArray.get(6).get(1);
+        return serviceS;
+    }
+
+    public String getUserS() {
+        fileXLSX.readFileExcel();
+        userS = fileXLSX.excelArray.get(6).get(2);
+        return userS;
+    }
+
+    public String getPasswordS() {
+        fileXLSX.readFileExcel();
+        passwordS = fileXLSX.excelArray.get(6).get(3);
+        return passwordS;
+    }
+
+    public String getUrlDBP() {
+        fileXLSX.readFileExcel();
+        urlDBP = fileXLSX.excelArray.get(5).get(0);
+        return urlDBP;
+    }
+
+    public String getServiceP() {
+        fileXLSX.readFileExcel();
+        serviceP = fileXLSX.excelArray.get(5).get(1);
+        return serviceP;
+    }
+
+    public String getUserP() {
+        fileXLSX.readFileExcel();
+        userP = fileXLSX.excelArray.get(5).get(2);
+        return userP;
+    }
+
+    public String getPasswordP() {
+        fileXLSX.readFileExcel();
+        passwordP = fileXLSX.excelArray.get(5).get(3);
+        return passwordP;
+    }
+
+    public String getPort() {
+        port = "1521";
+        return port;
+    }
 }

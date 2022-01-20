@@ -29,10 +29,10 @@ public class UninstallCBSServices  {
     }
 
     /** ejecuta el servicio querycustomerinfo, para porder validar si esta activa la cuenta,
-        si es prepago o no y para optener el numero de la cuenta*/
+     si es prepago o no y para optener el numero de la cuenta*/
     public String queryCustomerInfoGatewayCBS(String MSISDN, String URL) {
 
-      String response =   given()
+        String response =   given()
                 .headers("Content-type","text/xml;charset=UTF-8")
                 .body("<soapenv:Envelope xmlns:bcc=\"http://www.huawei.com/bme/cbsinterface/bccommon\" xmlns:bcs=\"http://www.huawei.com/bme/cbsinterface/bcservices\" xmlns:ws=\"http://ws.web.gatewaycbs.tigo.com.co/\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n" +
                         "   <soapenv:Header/>\n" +
@@ -108,7 +108,7 @@ public class UninstallCBSServices  {
     }
 
     /**Permite extraer informacion del response por medio de la llave o leabel del response ejemplo: ns3:Acctkey
-       internamente el busca la llave que abre como la que cierra y trae la informacion que tiene*/
+     internamente el busca la llave que abre como la que cierra y trae la informacion que tiene*/
     public String extractResponseInformation(String response, String llave ){
         String buscarLlaveInicio= "<"+llave+">";
         String buscarLlaveFinal = "</"+llave+">";

@@ -31,10 +31,8 @@ public class PruebaSteps {
     ResourceEnlistment enlistment = new ResourceEnlistment();
 
     @Given("^estoy probando$")
-    public void estoyProbando() {
-        enlistment.Enlistment(1);
-        //uninstallCBSServices.performLineCleaning(dataExcel.getUrlGatewayCBS(), dataExcel.getUrlGatewayMG(), dataExcel.getMSISDN());
-
+    public void estoyProbando() throws SQLException {
+        enlistment.ejecutarTodo();
     }
 
     @When("^hago algo$")
@@ -47,11 +45,6 @@ public class PruebaSteps {
 
     }
 
-    // -------Scenario 2-------------
-    @Given("^conexion a base de datos$")
-    public void conexionABaseDeDatos() throws SQLException {
-        databaseConnection.connection();
-    }
 }
 
 
