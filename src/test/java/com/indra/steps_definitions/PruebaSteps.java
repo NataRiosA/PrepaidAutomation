@@ -11,6 +11,8 @@ import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
+import java.sql.SQLException;
+
 public class PruebaSteps {
     @Managed
     WebDriver driver;
@@ -22,7 +24,7 @@ public class PruebaSteps {
     ResourceEnlistment enlistment = new ResourceEnlistment();
 
     @Given("^estoy probando$")
-    public void estoyProbando() {
+    public void estoyProbando() throws SQLException {
         enlistment.ejecutarTodo();
     }
 
