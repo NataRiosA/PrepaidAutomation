@@ -24,7 +24,7 @@ public class ResourceEnlistment extends DataExcel {
                 listCol.add(a.split(",")[columna].replace("]","").trim());
 
             }
-        System.out.println(listCol);
+        //System.out.println(listCol);
         return listCol;
     }
     /** ejemplo del metodo que ejecutaria los dos procesos para cada linea tanto los servicios del SOAP como los SP */
