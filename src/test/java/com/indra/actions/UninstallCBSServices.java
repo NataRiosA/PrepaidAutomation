@@ -1,39 +1,33 @@
 package com.indra.actions;
 
-import com.indra.pages.PruebaPages;
-import org.openqa.selenium.WebDriver;
-
 import static io.restassured.RestAssured.given;
 
 
-public class UninstallCBSServices extends PruebaPages {
-    public UninstallCBSServices(WebDriver driver) {
-        super(driver);
-    }
+public class UninstallCBSServices  {
 
-    public void performLineCleaning(){
-       String MSISDN = "3045959972";
-       String response = queryCustomerInfoGatewayCBS(MSISDN, "http://10.65.45.12:9001/gatewaycbs/BcServicesInt");
+    public void performLineCleaning(String urlGatewayCBS, String urlGatewayMG, String MSISDN){
+        //System.out.println("CBS  "+urlGatewayCBS);
+        //System.out.println("MG  "+urlGatewayMG);
+        //System.out.println("MSISDN  "+MSISDN);
+
+        String response = queryCustomerInfoGatewayCBS(MSISDN, urlGatewayCBS);
+
         if(validateActiveAccount(response)){
-            System.out.println(validateActiveAccount(response));
-            //uninstallSubscriptionGatewayMG(MSISDN,"http://10.65.45.12:9001/gatewaymgint/GatewayMGWSInt");
+            //System.out.println("cliente activo ?? "+validateActiveAccount(response));
+            uninstallSubscriptionGatewayMG(MSISDN,urlGatewayMG);
         }
         if(validateActiveAccount(response) && validatesIfPlanIsDifferentToPrepaid(response)){
-            System.out.println(validateActiveAccount(response));
-            System.out.println(validatesIfPlanIsDifferentToPrepaid(response));
+            //System.out.println("cliente activo ?? "+validateActiveAccount(response));
+            //System.out.println("cliente con plan diferente a prepago?? "+validatesIfPlanIsDifferentToPrepaid(response));
             String Acctkey = extractResponseInformation(response,"ns3:AcctKey");
             System.out.println(Acctkey);
-            //uninstallSubscriptionGatewayMG(MSISDN,"http://10.65.45.12:9001/gatewaymgint/GatewayMGWSInt");
-            //acctDeactivationGatewayCBS(Acctkey,"http://10.65.45.12:9001/gatewaycbs/BcServicesInt ");
+            acctDeactivationGatewayCBS(Acctkey,urlGatewayCBS);
         }
-
-        //System.out.println(validarSiCuentaActiva(response));
-        //System.out.println(validarSiElPlanEsDiferenteAPrepago(response));
-        //ejecutar uninstallSubscriptionGatewayMG
-        //System.out.println(extraerInformacionDelResponse(response,"ns3:AcctKey"));
-        //acctDeactivationGatewayCBS
-
+        if(!validateActiveAccount(response)){
+            System.out.println("La linea "+MSISDN+" no esta activa");
+        }
     }
+
     /** ejecuta el servicio querycustomerinfo, para porder validar si esta activa la cuenta,
         si es prepago o no y para optener el numero de la cuenta*/
     public String queryCustomerInfoGatewayCBS(String MSISDN, String URL) {

@@ -15,7 +15,8 @@ public class ReadFileXLSX {
 
     public void readFileExcel(){
         try {
-            FileInputStream f = new FileInputStream("C:\\PrepaidAutomation\\src\\test\\resources\\config_access\\data.xlsx");
+            FileInputStream f = new FileInputStream("src/test/resources/config_access/data.xlsx");
+
             XSSFWorkbook libro = new XSSFWorkbook(f);
             XSSFSheet hoja = libro.getSheetAt(0);
             Iterator<Row> filas = hoja.iterator();
@@ -32,23 +33,23 @@ public class ReadFileXLSX {
                     switch (celda.getCellType()) {
                         case STRING:
                             temporaryData.add(celda.getStringCellValue());
-                            System.out.print(celda.getStringCellValue()+"  |  ");
+                            //System.out.print(celda.getStringCellValue()+"  |  ");
                             break;
                         case NUMERIC:
                             int num = (int) celda.getNumericCellValue();
                             temporaryData.add(String.valueOf(num));
-                            System.out.print(num+"  |  ");
+                            //System.out.print(num+"  |  ");
                             break;
                     }
 
                 }
                 excelArray.add(temporaryData);
-                System.out.println();
+                //System.out.println();
             }
         libro.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //System.out.println(excelArray.get(4).get(5));
+        //System.out.println(excelArray);
     }
 }
