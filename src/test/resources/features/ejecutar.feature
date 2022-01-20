@@ -7,7 +7,3 @@ Feature: prueba
     Given estoy probando
     When hago algo
     Then deberia poder ver lo que pasa
-
-  @Scenario2
-  Scenario: Ingresar a la base de datos activador
-    Given conexion a base de datos
