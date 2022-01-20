@@ -10,15 +10,6 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
-import org.openqa.selenium.remote.DesiredCapabilities;
-
-import java.io.File;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.sql.SQLException;
 
 public class PruebaSteps {
     @Managed
@@ -32,9 +23,7 @@ public class PruebaSteps {
 
     @Given("^estoy probando$")
     public void estoyProbando() {
-        enlistment.Enlistment(1);
-        //uninstallCBSServices.performLineCleaning(dataExcel.getUrlGatewayCBS(), dataExcel.getUrlGatewayMG(), dataExcel.getMSISDN());
-
+        enlistment.ejecutarTodo();
     }
 
     @When("^hago algo$")
@@ -45,12 +34,6 @@ public class PruebaSteps {
     @Then("^deberia poder ver lo que pasa$")
     public void deberiaPoderVerLoQuePasa() {
 
-    }
-
-    // -------Scenario 2-------------
-    @Given("^conexion a base de datos$")
-    public void conexionABaseDeDatos() throws SQLException {
-        databaseConnection.connection();
     }
 }
 
