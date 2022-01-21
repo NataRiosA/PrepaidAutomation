@@ -6,7 +6,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.WebDriver;
 
-@DefaultUrl("http://10.69.60.57:8180/tigo-pos-web/wap/windex.wml")
+@DefaultUrl("http://10.69.60.57:8180/tigo-pos-web/index.jsp")
 public class LoginPages extends PageObject {
     public LoginPages(WebDriver driver) {
         super(driver);

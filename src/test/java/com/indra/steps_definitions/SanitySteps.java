@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.sql.SQLException;
 
-public class PruebaSteps {
+public class SanitySteps {
     @Managed
     WebDriver driver;
 
@@ -25,7 +25,7 @@ public class PruebaSteps {
 
     @Given("^estoy probando$")
     public void estoyProbando() throws SQLException {
-        enlistment.ejecutarTodo();
+        enlistment.executeAllProcedures();
     }
 
     @When("^hago algo$")

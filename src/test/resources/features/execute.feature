@@ -1,7 +1,7 @@
 @test
-Feature: prueba
+Feature: Sanity limpieza y aprovisionamiento de recursos
 
-  yo como que quiero probar algo
+  yo como que quiero realizar una limpieza de recursos
 
   Scenario: probando
     Given estoy probando

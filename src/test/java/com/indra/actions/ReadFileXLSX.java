@@ -41,7 +41,6 @@ public class ReadFileXLSX {
                             //System.out.print(num+"  |  ");
                             break;
                     }
-
                 }
                 excelArray.add(temporaryData);
                 //System.out.println();

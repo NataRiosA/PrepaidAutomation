@@ -19,8 +19,7 @@ public class DatabaseConnection extends DataExcel {
         }
 
         public void databaseConnectionActivator(String url, String port, String service, String user, String password,
-                                   String sp, String msdidn) throws SQLException {
-
+                                   String sp, String msisdn) throws SQLException {
             OracleDataSource ods = null;
             Connection conn= null;
             ResultSet resultSet;
@@ -30,13 +29,12 @@ public class DatabaseConnection extends DataExcel {
             ods.setUser(user);
             ods.setPassword(password);
             conn = ods.getConnection();
-
             try
             {
                 // Query the employee names
                 String query = "begin "+sp+"(?); end;";
                 CallableStatement cs3 = conn.prepareCall(query);//"{call "+sp+" (?)}"
-                cs3.setString(1,msdidn);
+                cs3.setString(1,msisdn);
                 cs3.execute();
                 System.out.println("se ejecuta correctamente");
             }
@@ -45,9 +43,9 @@ public class DatabaseConnection extends DataExcel {
                 if(conn!=null) conn.close();
             }
         }
+
         public void databaseConnectionEpos(String url, String port, String service, String user, String password,
                                     String sp, String msi, String msisdn) throws SQLException {
-
             OracleDataSource ods = null;
             Connection conn= null;
             ResultSet resultSet;
@@ -57,7 +55,6 @@ public class DatabaseConnection extends DataExcel {
             ods.setUser(user);
             ods.setPassword(password);
             conn = ods.getConnection();
-
             try
             {
                 // Query the employee names
@@ -74,6 +71,7 @@ public class DatabaseConnection extends DataExcel {
                 if(conn!=null) conn.close();
             }
         }
+
         public void databaseConnectionSiebel(String url, String port, String service, String user, String password,
                                     String sp, String msi, String msisdn) throws SQLException {
 
@@ -86,7 +84,6 @@ public class DatabaseConnection extends DataExcel {
             ods.setUser(user);
             ods.setPassword(password);
             conn = ods.getConnection();
-
             try
             {
                 // Query the employee names
@@ -102,9 +99,9 @@ public class DatabaseConnection extends DataExcel {
                 if(conn!=null) conn.close();
             }
         }
+
         public void databaseConnectionPostsale(String url, String port, String service, String user, String password,
                                     String sp, String msisdn) throws SQLException {
-
             OracleDataSource ods = null;
             Connection conn= null;
             ResultSet resultSet;
@@ -114,7 +111,6 @@ public class DatabaseConnection extends DataExcel {
             ods.setUser(user);
             ods.setPassword(password);
             conn = ods.getConnection();
-
             try
             {
                 // Query the employee names

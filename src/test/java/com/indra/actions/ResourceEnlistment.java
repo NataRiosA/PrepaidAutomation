@@ -27,7 +27,7 @@ public class ResourceEnlistment extends DataExcel {
         //System.out.println(listCol);
     }
     /** ejemplo del metodo que ejecutaria los dos procesos para cada linea tanto los servicios del SOAP como los SP */
-    public void ejecutarTodo() throws SQLException {
+    public void executeAllProcedures() throws SQLException {
         enlistment();
         int total = listMsisdn.size();
         int i = 0;

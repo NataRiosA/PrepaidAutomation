@@ -7,10 +7,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/ejecutar.feature"
+        features = "src/test/resources/features/execute.feature"
         ,glue = "com.indra.steps_definitions"
         ,snippets = SnippetType.CAMELCASE
         //,tags = "@Scenario2"
 )
-public class PruebaRunners {
+public class SanityRunners {
 }
