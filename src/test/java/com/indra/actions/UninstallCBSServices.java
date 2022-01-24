@@ -13,12 +13,9 @@ public class UninstallCBSServices  {
         String response = queryCustomerInfoGatewayCBS(MSISDN, urlGatewayCBS);
 
         if(validateActiveAccount(response)){
-            //System.out.println("cliente activo ?? "+validateActiveAccount(response));
             uninstallSubscriptionGatewayMG(MSISDN,urlGatewayMG);
         }
         if(validateActiveAccount(response) && validatesIfPlanIsDifferentToPrepaid(response)){
-            //System.out.println("cliente activo ?? "+validateActiveAccount(response));
-            //System.out.println("cliente con plan diferente a prepago?? "+validatesIfPlanIsDifferentToPrepaid(response));
             String Acctkey = extractResponseInformation(response,"ns3:AcctKey");
             System.out.println(Acctkey);
             acctDeactivationGatewayCBS(Acctkey,urlGatewayCBS);
