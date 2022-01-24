@@ -15,7 +15,7 @@ public class ReadFileXLSX {
 
     public void readFileExcel(){
         try {
-            FileInputStream f = new FileInputStream("src/test/resources/config_access/data.xlsx");
+            FileInputStream f = new FileInputStream("src/test/resources/config_data/data.xlsx");
 
             XSSFWorkbook libro = new XSSFWorkbook(f);
             XSSFSheet hoja = libro.getSheetAt(0);
