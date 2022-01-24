@@ -5,19 +5,21 @@ import java.awt.event.KeyEvent;
 import java.io.IOException;
 
 public class InventoryActivation extends ReadFileXLSX{
+
     public void excecuteActivation() throws IOException, InterruptedException, AWTException {
-        openProgram("C:\\Program Files (x86)\\Winwap Technologies\\WinWAP for Windows 4.2\\WinWAP4.exe"
+        // mapear elementos desde el archivo excel
+        excecuteStepsActivation("C:\\Program Files (x86)\\Winwap Technologies\\WinWAP for Windows 4.2\\WinWAP4.exe"
                 ,"CQ10960370","Tigo.2018*");
     }
 
-    public  void  openProgram(String rutaPrograma, String user, String password) throws InterruptedException, IOException, AWTException {
+    public  void excecuteStepsActivation(String rutaPrograma, String user, String password)
+            throws InterruptedException, IOException, AWTException {
         Robot robot=new Robot();
         Process proceso = Runtime.getRuntime().exec(rutaPrograma);
         Thread.sleep(2000);
         for (int i = 0; i<3; i++){
             robot.keyPress(KeyEvent.VK_TAB);
             robot.keyRelease(KeyEvent.VK_TAB);
-            System.out.println("tab"+i);
         }
 
         write(user);
@@ -39,7 +41,6 @@ public class InventoryActivation extends ReadFileXLSX{
         for (int i = 0; i<8; i++){
             robot.keyPress(KeyEvent.VK_TAB);
             robot.keyRelease(KeyEvent.VK_TAB);
-            System.out.println("tab"+i);
         }
 
         robot.keyPress(KeyEvent.VK_ENTER);
@@ -50,7 +51,6 @@ public class InventoryActivation extends ReadFileXLSX{
         for (int i = 0; i<2; i++){
             robot.keyPress(KeyEvent.VK_TAB);
             robot.keyRelease(KeyEvent.VK_TAB);
-            System.out.println("tab"+i);
         }
 
         robot.keyPress(KeyEvent.VK_ENTER);
@@ -62,6 +62,8 @@ public class InventoryActivation extends ReadFileXLSX{
 
         System.out.println("Activacion de Invetario Finalizada");
     }
+
+
 
     public static void write(String texto) {
         try {
