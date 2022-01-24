@@ -24,6 +24,7 @@ public class MerchandiseEntryAction extends MerchandiseEntryPage {
         WebElement a = getDriver().findElement(By.id("formMenu:j_id26"));
         actions.moveToElement(a).build().perform();
         getMassMerchandiseEntry().click();
+
     }
 
     public void merchandiseEntry(){
