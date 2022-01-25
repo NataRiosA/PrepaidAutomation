@@ -1,7 +1,7 @@
 package com.indra.steps_definitions;
 
 import com.indra.actions.*;
-import com.indra.models.DataExcel;
+import com.indra.models.DataExcelModel;
 import com.indra.models.LoginPageModel;
 import com.indra.pages.LoginPage;
 import cucumber.api.java.en.Given;
@@ -19,12 +19,12 @@ public class SanitySteps{
 
     UninstallCBSServices uninstallCBSServices = new UninstallCBSServices();
     DatabaseConnection databaseConnection = new DatabaseConnection();
-    DataExcel dataExcel = new DataExcel();
+    DataExcelModel dataExcelModel = new DataExcelModel();
     LoginPage loginPage = new LoginPage(driver);
     ResourceEnlistment enlistment = new ResourceEnlistment();
     LoginPageAction loginPageAction = new LoginPageAction(driver);
     MerchandiseEntryAction merchandiseEntryAction = new MerchandiseEntryAction(driver);
-
+    InventoryAllocationAction inventoryAllocationAction =new InventoryAllocationAction(driver);
 
     @Given("^Se ejecutan procedimientos en bd y soapUi$")
     public void seEjecutanProcedimientosEnBdYSoapUi() throws SQLException {
@@ -46,6 +46,17 @@ public class SanitySteps{
     @Then("^Se completa datos para cargar mercancia$")
     public void seCompletaDatosParaCargarMercancia() {
         merchandiseEntryAction.merchandiseEntry();
+    }
+
+
+    @When("^Se ingresa a cargue de inventario$")
+    public void seIngresaACargueDeInventario() throws InterruptedException {
+        inventoryAllocationAction.loadInventory();
+    }
+
+    @Then("^Deberia poder realizar el cargue de inventario$")
+    public void deberiaPoderRealizarElCargueDeInventario() {
+
     }
 
 }

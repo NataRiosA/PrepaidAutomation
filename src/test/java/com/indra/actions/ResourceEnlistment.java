@@ -1,10 +1,10 @@
 package com.indra.actions;
-import com.indra.models.DataExcel;
+import com.indra.models.DataExcelModel;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-public class ResourceEnlistment extends DataExcel {
+public class ResourceEnlistment extends DataExcelModel {
     UninstallCBSServices uninstallCBSServices = new UninstallCBSServices();
     DatabaseConnection databaseConnection = new DatabaseConnection();
     ReadFileXLSX fileXLSX = new ReadFileXLSX();
@@ -16,6 +16,7 @@ public class ResourceEnlistment extends DataExcel {
         fileXLSX.readFileExcel();
         List<ArrayList<String>> dataTest = new ArrayList<>();
         dataTest = fileXLSX.excelArray.subList(10,fileXLSX.excelArray.size());
+
         for (int i = 0 ; i< dataTest.size(); i++){
             String dato;
             dato= String.valueOf(dataTest.get(i));

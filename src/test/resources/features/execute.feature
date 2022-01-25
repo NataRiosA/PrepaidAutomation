@@ -11,4 +11,11 @@ Feature: Sanity limpieza y aprovisionamiento de recursos
       | CQ10960370 | Tigo.2018* |
     Then Se ingresa a entrada masiva de mercancia
     And  Se completa datos para cargar mercancia
-
+  @inventory
+  Scenario: realizar el cargue de inventario
+    Given Se ejecutan procedimientos en bd y soapUi
+    When Se ingresa a la plataforma epos para cargue de inventario
+      | user       | password   |
+      | CQ10960370 | Tigo.2018* |
+    And  Se ingresa a cargue de inventario
+    Then Deberia poder realizar el cargue de inventario
